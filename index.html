@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript journey</title>
+  </head>
+  <body>
+    <h1 id="myh1"></h1>
+    <p id="p1"></p>
+    <script>
+      /*"use strict";
+      confirm(`Are you a student?
+      if yes press ok  if not press not`);
+      //strict mode === to make Js working in a formal and stirct way. it can handle unassigned variables and more */
+
+      // Dom maniplation
+
+      document.getElementById("myh1").textContent = `A 30 day JS challenge`;
+      document.getElementById("p1").innerHTML = `
+         <strong>Javascript</strong> is a programming language that is used to make web pages interactive and dynamic. It is one of the most popular programming languages in the world and is widely used for web development, game development, and mobile app development. With JavaScript, you can create interactive features such as dropdown menus, sliders, and pop-ups, as well as build complex applications like social media platforms and online marketplaces. Learning JavaScript can open up many opportunities in the tech industry and allow you to create amazing projects!`;
+
+      /* //Day 1😹😹😹😹😹
+            // Interaction with users  (alert, prompt, confirm)
+                alert(`hello`);
+                alert("what's")
+                alert('up')
+                alert("Javascript is an amazing prpogramming  launguge you shold to learn")
+                alert(3+
+                    2
+                    +1
+                ) //all this are valid ways for interaction
+                 
+                prompt(`Where did you listen about our website?
+            A. on youtube
+            B, on chatGPt
+            C, from another website
+            D,  on tiktok
+            `);
+            alert(`Thanks for your information!`);
+                let name = prompt(`What is your name?`, '');
+                let isStudent = confirm(`Are you a student`);
+                console.log(name)
+                console.log(isStudent);
+                console.log("Myg name is \"yitbarek\".  backslash = \\  and new \n line "); // "" and '' are written in this way. */
+
+      /* shift + alt + A  =  to create multipleline comments
+               shift + alt + F  =  to format our code.
+            */
+
+      /* let name = "yitbarek",
+        age = 21,
+        status = "programmer";
+      let job = null;
+      let language = "javascript";
+      console.log(`let's learn "HTML", "CSS" and "${language}".`);
+      console.log(
+        `your name is ${name} , you are ${age} years old. and you are a ${status}.`,
+      );
+
+      let x1 = "QRCODE";
+      let y1 = "QRCODE";
+      console.log(`these  two (x and y) symbols are equal  👉`, x1 === y1); // true b/se they have the same value
+      let x2 = Symbol("QRCODE");
+      let y2 = Symbol("QR-CODE");
+      console.log(`these  two (x2 and y2) symbols are equal  👉`, x2 === y2); //false symbol is unique in a program */
+
+      /* camel case is prefered for naming variable & functions in javascript as conventiion.
+                variable can not start with numbers
+                a variable name can consist of Letters(lower and Uper case),
+                numbers, $ and _ characters and unicode(in different language(like 👉 መቶ))። *
+                // let, var, const = we use const for values which are constant in our program.
+                 where as we use let and var for changable value but they are different
+                 since var has a global scope and let has block scope
+                let _three = 3;
+                let መቶ = 100;
+                const myBirthDay = "09/12/2004";
+                const $hundredመቶ = 100;
+                console.log(_three + $hundredመቶ + መቶ);
+                const arr = [4, 5, 6, 7];
+                arr.push(10, 30, 50);
+                console.log(arr);
+                console.log(myBirthDay);  */
+
+      /*  let name = "yitbarek";
+      let age = 21;
+      let luckyNumbers = [1, 2, 3];
+      let studentInfo = ["yitbarek", 21, "freelancer", "student"];
+      console.log(typeof name, typeof age);
+      console.log(typeof 123); // number
+      console.log(typeof true); //boolean
+      console.log(typeof "hi"); //string
+      console.log(typeof {}); // object
+      console.log(typeof Symbol()); // symbol
+      console.log(typeof [1, 3, 4.5]); // object
+      console.log(typeof alert); // function
+      console.log(typeof confirm); // function. prompt too
+      console.log(luckyNumbers); // prints array
+      console.log(typeof luckyNumbers); // object
+      console.log(typeof luckyNumbers[1]); //number
+      console.log(studentInfo);
+      console.log(typeof studentInfo[0]); //string
+      console.log(typeof studentInfo[1]); //number
+      console.log(typeof studentInfo[2]); //string */
+      /* const z = Symbol("QRCODE");
+         console.log(z); */
+
+
+      /* Day 2 😹😹😹🐟🐟 */
+
+    /*  //Types of convertions
+                //numeric Convertion
+                console.log(Number("123")); //number
+                console.log(Number(true));  // 1
+                console.log(Number(null));  // 0
+                console.log(Number(false));  // 0
+                console.log(Number(undefined)); // NaN
+                console.log(Number("123z")); // NaN  */
+                
+      /* //String convertion
+            console.log(String(`123`)); //123 👈 string
+            console.log(String(true)); // boolean becomes string 👉true
+            console.log(String(null)); // null
+            console.log(String(false)); // false
+            console.log(String(undefined)); // undefined
+            console.log(String("123z")); // 123z
+            console.log(isNaN(123)); // false. cause it is alreardy a number.
+            console.log(isNaN("123z")); // true. since. it is not a number
+
+             */
+
+      /*  // boolean conversion
+                console.log(Boolean(1)); // true
+                console.log(Boolean(0));  // false
+                console.log(Boolean("0"))  //true
+                console.log(Boolean(null)); // false
+                console.log(Boolean(undefined)); // false
+                console.log(Boolean("123z"));   // true
+                console.log(Boolean(""));   // false
+                console.log(Boolean(" "));  // true
+                console.log(Boolean("hi"));  // true
+                console.log(Boolean(NaN));  // true
+                console.log(Boolean("true"));  // true
+                console.log(Boolean(true));  // true
+                console.log(Boolean("false"));  // true
+                console.log(Boolean(false));  // false
+                console.log(Boolean([]));  // objects = true. even the  are empty */
+      /*
+              //Basic operators, maths
+              // +, -, * , /, %, **(exponential)
+              // ++, -- (increment and decrement)
+              // +=, -=, *=, /=, %=, **=
+              let x = 5;
+              let y = 10;
+              let a = 20;
+
+              console.log(y ** x); //100000
+              console.log(y ** 3); //1000
+              console.log(y + x); //15
+              console.log(y % x); //0
+              console.log(++x); //6 it adds one
+              console.log(x++); //6  stays remain
+              console.log(x); // x becomes 7
+              console.log(--y); //9  it reduces one
+              console.log(y--); //9  remain the same
+              console.log(-x); // -7 negates the sign
+              console.log(2 + 4 + "5");
+              console.log("5" + 6 + 8);
+              console.log(a);
+              a += a;
+              console.log(a); // 40
+               a -= 50;
+              console.log(a);  // -10
+              a *= a;
+              console.log(a);  // -10 * -10 = 100
+              a /= a;
+              console.log(a);  // 100/100 = 1
+              */
+
+      /* let x = -90;
+             console.log(Math.round(3.67));
+             console.log(Math.log(3.67));
+             console.log(Math.trunc(3.67));  //always eleminate decimal values = 3
+             console.log(Math.floor(2.45));
+             console.log(Math.pow(2, 3));
+             console.log(Math.ceil(2.56));   //  always counted down = 2
+             console.log(Math.sin(45));
+             console.log(Math.cos(90));
+             console.log(Math.tan(60));
+             console.log(Math.abs(-34));  //34
+             console.log(Math.sign(x));
+             console.log( Math.max(2,3,4,5));
+             console.log( Math.min(2,3,4,5)); */
+
+      /* 😹😹😹🐟🐟 Day 3 Javascript
+
+        //Generating random numbers in Js
+            let randomNumber = Math.random();
+            console.log(Math.floor(randomNumber * 100) + "🤣"); // to generate a random number B/N 0 and 99.
+            console.log(Math.sqrt(randomNumber*100));
+       */
+
+      /*   //comparisons
+            console.log("1" == 1);  //true
+            console.log("1" === 1); // false strict comparision
+            console.log( null == undefined); // true
+            console.log(null === undefined); //false
+            console.log("" == null); // null always >= 0
+            console.log(undefined == 0); // false. undefined is NaN,
+            // compered to any No becomes  false,shold not be compered with others.
+            console.log( 2 + 1 >= 1); //true. operations first.
+
+            console.log("apple" > "pinapple"); // false
+            console.log("2" > "12"); //true, considered as a string
+            console.log("z" > "A"); // true  a... > z > A...> Z.  caze matters
+            console.log(true > false); // true
+            console.log("true" > "false") // true
+
+            /*
+             // conditional Branching if, ? and loops
+             if (0){
+              console.log(`you are not a genus guy.`)
+            } // never excutes
+             if (1){console.log(`you are a genus guy`)}// always excutes
+
+            let year;
+            do {
+            year = Number(prompt("write the current year!"));
+            if(isNaN(year) || 0 ){
+              alert("please, Enter a valid year number!")
+            }}while (isNaN(year));
+
+            if (year === new Date().getFullYear()) {
+              console.log("correct");
+            } else {
+              alert("wrong");21
+              console.log("sorry");
+            }
+
+            let age = Number(prompt(`How old are you?`, 18));
+            let message = (age < 5) ? "hi, baby" :
+            (age < 18) ? "hello, what can i help you?" :
+            (age < 100) ?  "hello, sir/Madam" :
+            "OMG! what a gifted age!";
+            alert(message);
+            console.log(age);
+            */
+
+      /* Day 4😹😹😹😹😹🐟🐟 May God bless the day! */
+      /* Logical Operators  ||    &&   !    and   ?? */
+      // alert(true || true);
+      // alert(false || true);
+      // alert(true  || false);
+
+      // alert(false || false);
+
+      //  alert(true && true);
+      // alert(false && true);
+      // alert(true && false);
+      // alert(false && false);
+
+      // alert(!true);
+      // alert(!false);
+
+      //let user;
+      //alert(user ?? "nonUserr"); // nonuser b/se user is not defiend
+
+      // ??  always checks NUll and undefiened. if they come first return them other ways return the next.
+
+      /* we can also use multiple operators to check multiple conditions. */
+      // Example
+      // console.log(false || 0 || null || undefined); // undefiened.
+      // alert(true && true && false && true);// false
+      // alert( false || 0 || null || false); // false
+
+      // loops in javascript ( for, while and do...while)
+      // let i = 4;
+      // while (i <=8){
+      //   alert(i);         //4,5,6,7,8
+      //   i++;
+      // }
+      // let j = 5;
+      // while(j){
+      //   console.log(j);
+      //   j--;
+      // }
+
+      // let i = 3;
+      // do {
+      //   console.log(i); // 3  excutes the first condition even if the candition is false
+      //   i++;
+      // } while (i < 0);
+
+      /*  //array and loops
+
+      const arrayName = ["fasika likes", "April", "15"];
+      for (let i = 0; i < arrayName.length; i++) {
+        console.log(`${arrayName[i]}`);
+      }
+
+      let cars = ["07", "toyota", " rangeover", "ferari"];
+      console.log(cars[0]); // accesing array values
+
+      // run begin
+      let i = 0;
+      // if condition → run body and run step
+      if (i < 3) {
+        alert(i);
+        i++;
+      }
+      // if condition → run body and run step
+      if (i < 3) {
+        alert(i);
+        i++;
+      }
+      // if condition → run body and run step
+      if (i < 3) {
+        alert(i);
+        i++;
+      }
+      // ...finish, because now i == 3
+
+      let num;
+      do {
+        num = Number(prompt("Enter a password  b/n 100 and 1000 ", ""));
+      } while ((num <= 1000  || num >= 10000) ||
+      num == "" || isNaN(num));
+   */
+      /* for (let i = 0; i <= 5; i++) {
+        if (i === 3) continue; // escape the current value and continue looping
+        console.log(i);
+      }
+
+      for (let i = 0; i < 10; i++) {
+        if (i === 7) break; // stop! Looping
+        console.log(i);
+      }
+        */
+      /*    let sum = 0;
+     while(true){
+      let value = +prompt("Enter a number", ' ')
+      if (!value) break;
+      sum  += value;
+     }
+     console.log("sum : " + sum ); */
+
+      /* the switch statement in Javescript */
+
+      /*  let gradeLetter = prompt("Enter your grade letter!");
+
+      if (gradeLetter) {
+        gradeLetter = gradeLetter.toUpperCase();
+      }
+
+      switch (gradeLetter) {
+        case "A":
+          alert("Excellent!");
+          break;
+        case "B":
+          alert("Good");
+          break;
+        case "C":
+          alert("Enough!");
+          break;
+        case "D":
+          alert("Poor!");
+          break;
+        default:
+          alert("Invalid grade letter!");
+      } */
+      //👇👇👇/multiple cases one action
+
+      /* function in Java script (Reusable block of code)*/
+
+      /* function calculateGrade(gradeLetter) {
+        if (!gradeLetter) return alert("no grade letter entered!");
+        gradeLetter = gradeLetter.toUpperCase();
+
+        switch (gradeLetter) {
+          case "A":
+          case "B":
+          case "C":
+            alert("Good!");
+            break;
+          case "D":
+            alert("Poor!");
+            break;
+          default:
+            alert("Invalid grade letter!");
+        }
+      }
+      let userInput = prompt("enter your grade letter!");
+      calculateGrade(userInput); */
+
+      /* const studentInfo = (name, age) => {
+        return `your name is ${name}, and your age is ${age}`;
+      }
+      let userName = prompt("Enter your name");
+      let age = Number(prompt("enter your age"));
+      if(!userName || isNaN(age)|| age<=0){
+        console.log("invalid input.");
+      } else {console.log(studentInfo(userName, age));} */
+
+      /* let stack = [];
+      stack.push(1, 2, 3, 4, 5, 6, 7); // appending these value to the array
+      console.log(stack);
+      console.log(stack.length); //7
+      stack.pop(); // removing the last element of an array
+      console.log(stack);  //1, 2, 3, 4, 5, 6
+      stack.unshift(0); //adding element to the start
+      console.log(stack);
+      stack.shift();  //adding element to the start
+      console.log(stack);
+      console.log(stack.includes(2)); // true = checking presence of element */
+      /*
+        function FibonacciNumbers(n) {
+        if (n === 0) return 0;
+        if (n === 1) return 1;
+        return FibonacciNumbers(n - 1) + FibonacciNumbers(n - 2);
+      }
+      let userNum = Number(prompt("enter a number to see its fibonacci"));
+      for (let i = 0; i <= userNum; i++) {
+        console.log(FibonacciNumbers(i));
+      }  */
+
+      /* function fibonacciIter(n){
+        let a = 0, b = 1;
+        if(n ===0) return a;
+        for(let i = 2; i <= n; i++){
+          let temp = a+b;
+          a = b;
+          b = temp;
+        }
+       return b;
+      }
+      let userNum = Number(prompt("enter a number : "));
+      for (let i = 0; i<=userNum; i++)
+      console.log(fibonacciIter(i));
+     console.log(typeof fibonacciIter); */
+
+      //😹😹🐟 DAY 5🐟😹😹
+      /* const objects = { name: "yitbarek", score: 3.67,
+     grade: "A"
+   };
+   console.log(objects.score);
+   objects.name = "John";
+   console.log(objects.name);
+   console.log(objects.grade) */
+    </script>
+  </body>
+</html>
