@@ -14,11 +14,14 @@ body {
   align-items: center;
   height: 100vh;
 }
+::selection{
+  background-color: rgb(17, 211, 211);
+}
 
 h2 {
   color: white;
   text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -26,14 +29,14 @@ h2 {
 
 .year,
 .only {
-  margin: 1.3rem auto;
+  margin: 1.6rem auto;
   font-size: 4em;
   color: white;
   font-weight: bold;
 }
 
 .countdown {
-  background-color: rgb(0, 0, 0, 0.1);
+  background-color: #0000001a;
   color: white;
   padding: 1.1em;
   font-size: 1.6em;
@@ -49,10 +52,10 @@ h2 {
   position: relative;
   bottom: -30px;
   left: 50%;
-  font-size: .65em;
+  font-size: .6em;
   text-align: center;
   text-transform: uppercase;
-}
+} 
 
 .countdown #day::before {
   content: "days";
@@ -68,4 +71,4 @@ h2 {
 
 .countdown #second::before {
   content: "seconds";
-}
+} 

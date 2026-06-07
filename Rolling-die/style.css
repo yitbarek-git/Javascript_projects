@@ -7,7 +7,14 @@
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 5rem;
+  background-color: slateblue;
 }
 
 #container {
@@ -17,21 +24,28 @@ body {
   align-items: center;
   justify-content: center;
   margin: 5rem;
-  width: 15rem;
-  height: 15rem;
+  width: 7rem;
 }
 
 button {
   margin: 0.5rem;
   padding: 0.5rem;
 }
+
 #mybutton {
   border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 #mybutton:hover,
 #mybutton:hover {
   font-size: 1.8rem;
+}
+
+#label1,
+#label2,
+#label3 {
+  font-size: 20px;
+  border: 1px solid tomato;
 }
