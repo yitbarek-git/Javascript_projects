@@ -1,5 +1,3 @@
-const heightEl = document.getElementById("height");
-const weightEl = document.getElementById("weight");
 const computeBTN = document.getElementById("compute-btn")
 const resultBTN = document.getElementById("result-btn")
 const conditionBTN = document.getElementById("weight-condition")
@@ -12,19 +10,19 @@ function calculateBMI() {
   resultBTN.value = BMIValue;
 
   if (BMIValue < 18.5) {
-    conditionBTN.innerText = "Underweight!"
+    conditionBTN.innerText = "Underweight! 🤺"
   }
   else if (BMIValue >= 18.5 && BMIValue <= 24.9) {
-    conditionBTN.innerText = "Normal weight!"
+    conditionBTN.innerText = "Normal weight! 🧟‍♀️"
   }
   else if (BMIValue >= 25 && BMIValue < 29.9) {
-    conditionBTN.innerText = "overweight!"
+    conditionBTN.innerText = "overweight! 👮‍♂️"
   }
   else if (BMIValue >= 30) {
-    conditionBTN.innerText = "obisity!"
+    conditionBTN.innerText = "obisity! 🙆‍♀️"
   }
   else
-    conditionBTN.innerText = "Invalid!"
+    conditionBTN.innerText = "Error Occured!"
 }
 computeBTN.addEventListener("click", calculateBMI)
 

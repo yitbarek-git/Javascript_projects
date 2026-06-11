@@ -7,25 +7,28 @@
 }
 
 body {
-  background-color: slateblue;
+  background: linear-gradient(to bottom, rgb(0, 0, 255), rgb(106, 90, 205));
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   height: 100vh;
 }
-::selection{
-  background-color: rgb(17, 211, 211);
-}
 
+::selection {
+  background-color: rgb(211, 17, 24);
+}
 h2 {
-  color: white;
+  background-image: linear-gradient(to right,green, yellow, red, aqua);
+  background-clip: text;
+  color: transparent;
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
 }
+
 
 .year,
 .only {
@@ -36,14 +39,15 @@ h2 {
 }
 
 .countdown {
-  background-color: #0000001a;
+  background-color: rgba(149, 14, 14, 0.1);
   color: white;
   padding: 1.1em;
-  font-size: 1.6em;
+  right: 20px;
+  font-size: 1.8em;
   display: flex;
   gap: .3em;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -51,11 +55,11 @@ h2 {
   content: "";
   position: relative;
   bottom: -30px;
-  left: 50%;
+  left: 43%;
   font-size: .6em;
-  text-align: center;
+  letter-spacing: 1px;
   text-transform: uppercase;
-} 
+}
 
 .countdown #day::before {
   content: "days";
@@ -71,4 +75,4 @@ h2 {
 
 .countdown #second::before {
   content: "seconds";
-} 
+}

@@ -7,14 +7,26 @@
       }
 
       body {
-        width: 100vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 0, 0.745);
+        gap: 2rem;
+      }
+
+      h1, h5 {
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+      }
+
+      h5 {
+        font-size: 1.3rem;
       }
 
       #cameraFeed {
-        width: 300px;
+        width: 500px;
         height: 300px;
       }
-   
