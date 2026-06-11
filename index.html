@@ -1,20 +1,25 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>javascript journey</title>
     <style>
-     .ctr-btn{
-      font-size: 1.5em;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     }
+      .ctr-btn {
+        font-size: 1.5em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
     </style>
   </head>
+
   <body>
     <h1 id="myh1"></h1>
     <p id="p1"></p>
-    <p class="ctr-btn"> you can start learning now using the well prepared repostoty  below from scratch to pro level. <br>link👇 <br>  <a href="https://github.com/yitbarek-git/Javascript-jorney">https://github.com/yitbarek-git/Javascript-projects</a></p>
+    <p class="ctr-btn"> you can start learning now using the well prepared repostoty below from scratch to pro level.
+      <br>link👇 <br> <a
+        href="https://github.com/yitbarek-git/Javascript-jorney">https://github.com/yitbarek-git/Javascript-projects</a>
+    </p>
     <script>
       /*"use strict";
       
@@ -115,16 +120,15 @@
 
 
       /* Day 2 😹😹😹🐟🐟 */
+      /*  //Types of convertions
+                  //numeric Convertion
+                  console.log(Number("123")); //number
+                  console.log(Number(true));  // 1
+                  console.log(Number(null));  // 0
+                  console.log(Number(false));  // 0
+                  console.log(Number(undefined)); // NaN
+                  console.log(Number("123z")); // NaN  */
 
-    /*  //Types of convertions
-                //numeric Convertion
-                console.log(Number("123")); //number
-                console.log(Number(true));  // 1
-                console.log(Number(null));  // 0
-                console.log(Number(false));  // 0
-                console.log(Number(undefined)); // NaN
-                console.log(Number("123z")); // NaN  */
-                
       /* //String convertion
             console.log(String(`123`)); //123 👈 string
             console.log(String(true)); // boolean becomes string 👉true
@@ -134,7 +138,6 @@
             console.log(String("123z")); // 123z
             console.log(isNaN(123)); // false. cause it is alreardy a number.
             console.log(isNaN("123z")); // true. since. it is not a number
-
              */
 
       /*  // boolean conversion
@@ -165,7 +168,7 @@
               console.log(y ** x); //100000
               console.log(y ** 3); //1000
               console.log(y + x); //15
-              console.log(y % x); //0
+              console.log(y % x); //modules = dividing a deviding by diviser and returning the remainder = 0
               console.log(++x); //6 it adds one
               console.log(x++); //6  stays remain
               console.log(x); // x becomes 7
@@ -184,29 +187,28 @@
               a /= a;
               console.log(a);  // 100/100 = 1
               */
-
       /* let x = -90;
-             console.log(Math.round(3.67));
-             console.log(Math.log(3.67));
-             console.log(Math.trunc(3.67));  //always eleminate decimal values = 3
-             console.log(Math.floor(2.45));
-             console.log(Math.pow(2, 3));
-             console.log(Math.ceil(2.56));   //  always counted down = 2
-             console.log(Math.sin(45));
-             console.log(Math.cos(90));
-             console.log(Math.tan(60));
-             console.log(Math.abs(-34));  //34
-             console.log(Math.sign(x));
-             console.log( Math.max(2,3,4,5));
-             console.log( Math.min(2,3,4,5)); */
+      console.log(Math.round(3.67));//4
+      console.log(Math.log(32));
+      console.log(Math.trunc(3.67));  //always eleminate decimal values = 3
+      console.log(Math.floor(2.45)); //remeber in mid-school (floor function) the left most nearest integer in a number line. = 2
+      console.log(Math.pow(2, 3));
+      console.log(Math.ceil(2.56));   //  always counted down = 2
+      console.log(Math.sin(45));
+      console.log(Math.cos(90));
+      console.log(Math.tan(60));
+      console.log(Math.abs(-34));  //34
+      console.log(Math.sign(x));
+      console.log(Math.max(20, 3, 4, 5)); //20 the greatest number amoung the list
+      console.log(Math.min(2, 3, 4, 5)); //2 the least number amoung the list. */
 
-      /* 😹😹😹🐟🐟 Day 3 Javascript
+      //😹😹😹🐟🐟 Day 3 Javascript
 
-        //Generating random numbers in Js
-            let randomNumber = Math.random();
-            console.log(Math.floor(randomNumber * 100) + "🤣"); // to generate a random number B/N 0 and 99.
-            console.log(Math.sqrt(randomNumber*100));
-       */
+      //Generating random numbers in Js
+      let randomNumber = Math.random();
+      console.log(Math.floor(randomNumber * 100) + "🤣"); // to generate a random number B/N 0 and 99.
+      let x = Math.floor(randomNumber * 100);
+      console.log(Math.pow(x, 2));
 
       /*   //comparisons
             console.log("1" == 1);  //true
@@ -301,7 +303,7 @@
 
       /*  //array and loops
 
-      const arrayName = ["fasika likes", "April", "15"];
+      const arrayName = ["I likes", "December", "08"];
       for (let i = 0; i < arrayName.length; i++) {
         console.log(`${arrayName[i]}`);
       }
@@ -456,4 +458,5 @@
    console.log(objects.grade) */
     </script>
   </body>
+
 </html>
