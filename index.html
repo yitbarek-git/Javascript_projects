@@ -6,9 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>javascript journey</title>
     <style>
-      .ctr-btn {
-        font-size: 1.5em;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+        margin-top: 1rem;
+        height: 100vh;
+      }
+      h1 {
+        text-transform: uppercase;
+        text-align: center;
+      }
+      p {
+        letter-spacing: 1px;
+        padding: 1rem;
       }
     </style>
   </head>
@@ -17,12 +39,18 @@
     <h1 id="myh1"></h1>
     <p id="p1"></p>
     <p class="ctr-btn"> you can start learning now using the well prepared repostoty below from scratch to pro level.
-      <br>link👇 <br> <a
-        href="https://github.com/yitbarek-git/Javascript-jorney">https://github.com/yitbarek-git/Javascript-projects</a>
+      
+    </p>
+
+    <p>
+       <a
+        href="https://github.com/yitbarek-git/Javascript">https://github.com/yitbarek-git/Javascript-projects</a>
+    </p>
+    <p>
+      Writer : Yitbarek.K 👋😹😹
     </p>
     <script>
       /*"use strict";
-      
       confirm(`Are you a student?
       if yes press ok  if not press not`);
       //strict mode === to make Js working in a formal and stirct way. it can handle unassigned variables and more */
@@ -31,7 +59,9 @@
 
       document.getElementById("myh1").textContent = `A 30 day JS challenge`;
       document.getElementById("p1").innerHTML = `
-         <strong>Javascript</strong> is a programming language that is used to make web pages interactive and dynamic. It is one of the most popular programming languages in the world and is widely used for web development, game development, and mobile app development. With JavaScript, you can create interactive features such as dropdown menus, sliders, and pop-ups, as well as build complex applications like social media platforms and online marketplaces. Learning JavaScript can open up many opportunities in the tech industry and allow you to create amazing projects!`;
+         <strong>Javascript</strong> is a programming language that is used to make web pages interactive and dynamic. It is one of the most popular programming languages in the world and is widely used for web development, game development, and mobile app development.
+          <br>
+         With JavaScript, you can create interactive features such as dropdown menus, sliders, and pop-ups, as well as build complex applications like social media platforms and online marketplaces. Learning JavaScript can open up many opportunities in the tech industry and allow you to create amazing projects!`;
 
       /* //Day 1😹😹😹😹😹
             // Interaction with users  (alert, prompt, confirm)
@@ -411,42 +441,42 @@
         console.log("invalid input.");
       } else {console.log(studentInfo(userName, age));} */
 
-   /*     let container = [];
-      container.push(1, 2, 3, 4, 5, 6, 7, 8); // appending these value to the array(container.)
-      console.log(container);
-      console.log(container.length); //8
-      container.pop(); // removing the last element of an array
-      console.log(container);  //1, 2, 3, 4, 5, 6,7
-      container.unshift(0); //adding element to the start
-      console.log(container);
-      container.shift();  //removing element to the start
-      console.log(container);
-      console.log(container.includes(2)); // true = checking presence of element  */
-      
-        /* function FibonacciNumbers(n) {
-        if (n === 0) return 0;
-        if (n === 1) return 1;
-        return FibonacciNumbers(n - 1) + FibonacciNumbers(n - 2);
-      }
-      let userNum = Number(prompt("enter a number to see its fibonacci"));
-      for (let i = 0; i <= userNum; i++) {
-        console.log(FibonacciNumbers(i));
-      }   */
+      /*     let container = [];
+         container.push(1, 2, 3, 4, 5, 6, 7, 8); // appending these value to the array(container.)
+         console.log(container);
+         console.log(container.length); //8
+         container.pop(); // removing the last element of an array
+         console.log(container);  //1, 2, 3, 4, 5, 6,7
+         container.unshift(0); //adding element to the start
+         console.log(container);
+         container.shift();  //removing element to the start
+         console.log(container);
+         console.log(container.includes(2)); // true = checking presence of element  */
 
-       function fibonacciIter(n){
+      /* function FibonacciNumbers(n) {
+      if (n === 0) return 0;
+      if (n === 1) return 1;
+      return FibonacciNumbers(n - 1) + FibonacciNumbers(n - 2);
+    }
+    let userNum = Number(prompt("enter a number to see its fibonacci"));
+    for (let i = 0; i <= userNum; i++) {
+      console.log(FibonacciNumbers(i));
+    }   */
+
+     /*  function fibonacciIter(n) {
         let a = 0, b = 1;
-        if(n === 0) return a;
-        for(let i = 2; i <= n; i++){
-          let temp = a+b;
+        if (n === 0) return a;
+        for (let i = 2; i <= n; i++) {
+          let temp = a + b;
           a = b;
           b = temp;
         }
-       return b;
+        return b;
       }
       let userNum = Number(prompt("enter a number : "));
-      for (let i = 0; i<=userNum; i++)
-      console.log(fibonacciIter(i));
-     console.log(typeof fibonacciIter); 202
+      for (let i = 0; i <= userNum; i++)
+        console.log(fibonacciIter(i));
+      console.log(typeof fibonacciIter); 202// */
 
       //😹😹🐟 DAY 5🐟😹😹
       /* const objects = { name: "yitbarek", score: 3.67,

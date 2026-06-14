@@ -12,37 +12,49 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 5rem;
-  background: linear-gradient(lightblue, lightgreen, yellow);
+  font-family: Verdana;
+  margin: 5em;
+  background: linear-gradient(red, aqua, yellow);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+h1 {
+text-align: center;
+letter-spacing: 2px;
+}
 
 #container {
-  border: 1px solid red;
+  border: 1px solid blue;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  margin: 5rem;
-  width: 7rem;
+  margin: 3rem;
+ 
 }
 
 button {
   margin: 0.5rem;
   padding: 0.5rem;
+  border: none;
 }
 
 #mybutton {
-  border-radius: 10px;
+  margin: 2rem 0  -1rem;
+  border-radius: 25px;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-#mybutton:hover,
 #mybutton:hover {
-  font-size: 1.8rem;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 2rem;
+}
+
+#mybutton:active {
+  transform: rotateX(360deg);
+
 }
 
 #label1,
@@ -50,4 +62,12 @@ button {
 #label3 {
   font-size: 20px;
   border: 1px solid tomato;
+  
+}
+
+.result-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
