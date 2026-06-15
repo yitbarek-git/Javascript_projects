@@ -1,0 +1,77 @@
+    :root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent-dim: rgba(232, 255, 71, 0.12);
+  --text: #f0f0f0;
+  --muted: #6b6b6b;
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-mono: "DM Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+/* Background grid */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Glow blob */
+body::after {
+  content: "";
+  position: fixed;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(
+    ellipse,
+    rgba(232, 255, 71, 0.06) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+      h1 {
+        font-family: sans-serif, Arial, Helvetica;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 1.4rem;
+      }
+      p {
+        letter-spacing: 1px;
+        margin-top: 1.2rem;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1.3rem;
+      }
+      ::selection{
+        background-color: white;
+        color: black;
+      }
+   
