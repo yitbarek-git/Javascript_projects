@@ -1,4 +1,4 @@
-    :root {
+:root {
   --bg: #0a0a0a;
   --surface: #111111;
   --border: rgba(255, 255, 255, 0.08);
@@ -35,7 +35,6 @@ body::before {
     linear-gradient(var(--border) 1px, transparent 1px),
     linear-gradient(90deg, var(--border) 1px, transparent 1px);
   background-size: 60px 60px;
-  pointer-events: none;
   z-index: 0;
 }
 
@@ -48,30 +47,28 @@ body::after {
   transform: translateX(-50%);
   width: 600px;
   height: 400px;
-  background: radial-gradient(
-    ellipse,
-    rgba(232, 255, 71, 0.06) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(ellipse,
+      rgba(232, 255, 71, 0.06) 0%,
+      transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
-      h1 {
-        font-family: sans-serif, Arial, Helvetica;
-        text-transform: uppercase;
-        text-align: center;
-        padding-bottom: 1.4rem;
-      }
-      p {
-        letter-spacing: 1px;
-        margin-top: 1.2rem;
-      }
-      a {
-        text-decoration: none;
-        font-size: 1.3rem;
-      }
-      ::selection{
-        background-color: white;
-        color: black;
-      }
-   
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+::selection {
+  background-color: var(--text);
+  color: var(--bg);
+}

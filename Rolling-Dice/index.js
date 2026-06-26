@@ -1,3 +1,4 @@
+
 "use strict";
 const mybutton = document.getElementById("mybutton");
 const label1 = document.getElementById("label1");

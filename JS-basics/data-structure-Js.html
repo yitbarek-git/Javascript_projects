@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures: Objects and Arrays</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <h1>Data Structures: Objects and Arrays</h1>
+
+    <p> objects allow us to group values - including other objects to build complex data Structures</p>
+    <script>
+
+      let name = "Yitbarek";
+      console.log(name.toLowerCase()); // Method
+
+
+
+
+      // 😹😹🐟🐟Objects in JavaScript, with loops
+
+      const car/* object */ = {
+        type: "ferrari", /* property and its property value */
+        model: "812",
+        color: "red",
+        speed: "superfast"
+
+      };
+
+      // adding property
+      car.origin = ["USA", "UK", "Germany"];
+      // delete
+      delete car.model;
+      // accessing object properties
+      console.log(car.type); // ferrari
+      console.log(car.origin);//USA, UK, Germany
+      console.log(car.model); // not defined sinse it's deleted already.
+
+
+      for (let property in car) {
+        console.log(property + " " + car[property]);
+      }
+
+      // or more consice and modern way
+      for (const [key, value] of Object.entries(car)) console.log(`${key} : ${value}`);
+
+      console.log("type" in car)
+
+      let toDoList = [];
+      toDoList.push("Work out", "study JS", "take a nap", "Go to school")
+      console.log(toDoList);
+      console.log(toDoList.indexOf("take a nap"));//2
+      console.log(toDoList.indexOf("take  nap"));//-1
+
+      toDoList.pop();
+      console.log(toDoList);
+
+      toDoList.shift();
+      console.log(toDoList);
+
+      toDoList.unshift("Eating lanch");
+      console.log(toDoList);
+
+      console.log(toDoList.slice(2, 4));// take a nap
+      console.log(toDoList.slice());//no change 
+      console.log(toDoList.slice(1));// starts slicing from index 1 and return untill the last index
+
+
+
+      /* string also have some built in properties
+       but in contrary to objects string, number and booeans are immutable values in JS, meaning we can't change their values ones declared unlike objects*/
+
+      console.log("coconuts".slice(4, 7));
+      console.log("coconuts".indexOf("u"));
+      console.log("  trimming is   \n".trim());// removes spaces, newlines, tabs, simmilar charachters
+
+
+      /* let price = Number(prompt("Enter price of the good in dollars."))
+      let x = String(price).padEnd(2, "0");
+      x = x.slice(1)
+      console.log(`${price}.${x} cents`); */
+
+      let sentence = "you are the nicest guy i know ever.";
+
+      let word = ['you', 'are', 'the', 'nicest', 'guy', 'i', 'know', 'ever.'];
+      console.log(word.join(" "));
+      console.log(sentence.repeat(2).split(" "));
+
+      let var1 = "variables with function";
+      console.log(var1.length);//23
+      
+
+
+
+
+
+
+    </script>
+  </body>
+
+</html>

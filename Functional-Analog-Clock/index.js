@@ -3,7 +3,7 @@ const minuteEl = document.getElementById("minute");
 const secondEl = document.getElementById("second");
 
 
-function updateClock() {
+const updateClock = function() {
   const currentDate = new Date();
   setInterval(updateClock, 1000);
   const hour = new Date().getHours();

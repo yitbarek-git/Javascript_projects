@@ -5,7 +5,7 @@ const minuteEl = document.getElementById("minute");
 const secondEl = document.getElementById("second");
 
 //End of 2026 and start of 2027
- const newYearDate = new Date(`January 1, 2027 00:00:00`).getTime();
+ const newYearDate = new Date(`Januarya 1, 2027 00:00:00`).getTime();
  
 updateCountDown();
 

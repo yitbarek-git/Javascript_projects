@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements in javascript.</title>
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <style>
+      body {
+        background-color: oklch(0.145 0 0);
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        letter-spacing: 1px;
+        word-spacing: 0.1px;
+      }
+
+      .container {
+        margin: 2em;
+      }
+
+
+      .payment-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        border: 2px solid;
+        margin: 1.2em 0;
+        padding: 0.8rem;
+      }
+
+      #submitBtn {
+        font-size: 1em;
+        font-family: verdana, Arial;
+        border: none;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <input type="checkbox" id="subscribeBtn">
+      <label for="subscribeBtn">Subscribe</label>
+
+      <div class="payment-container">
+        <input type="radio" id="visaBox" name="card">
+        <label for="visaBox">visa</label>
+
+        <input type="radio" id="mastercardBox" name="card">
+        <label for="mastercardBox">mastercard</label>
+
+        <input type="radio" id="paypalBox" name="card">
+        <label for="paypalBox">paypal</label>
+      </div>
+      <p id="subResult"></p>
+      <input type="submit" id="submitBtn">
+      <p id="paymentResult"></p>
+    </div>
+    <script>
+      const subscribeBtn = document.getElementById("subscribeBtn");
+      const visaBox = document.getElementById("visaBox");
+      const mastercardBox = document.getElementById("mastercardBox");
+      const paypalBox = document.getElementById("paypalBox");
+      const subResult = document.getElementById("subResult");
+      const paymentResult = document.getElementById("paymentResult");
+      const submitBtn = document.getElementById("submitBtn");
+
+      submitBtn.addEventListener("click", function () {
+        if (subscribeBtn.checked) {
+          subResult.textContent = `you are subscribed! thanks.🙏`
+        } else {
+          subResult.textContent = `you are not subscribed yet! please consider subscribing.`
+        }
+      })
+    </script>
+  </body>
+
+</html>

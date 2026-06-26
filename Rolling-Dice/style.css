@@ -11,7 +11,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
   font-family: Verdana;
   margin: 5em;
   background: linear-gradient(red, aqua, yellow);
@@ -20,7 +19,7 @@ body {
 }
 h1 {
 text-align: center;
-letter-spacing: 2px;
+letter-spacing: 1px;
 }
 
 #container {

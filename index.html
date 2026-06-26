@@ -1,98 +1,23 @@
 <!doctype html>
-<html lang="en">
+ <html lang="en">
 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>javascript journey</title>
-    <style>
-     :root {
-  --bg: #0a0a0a;
-  --surface: #111111;
-  --border: rgba(255, 255, 255, 0.08);
-  --accent-dim: rgba(232, 255, 71, 0.12);
-  --text: #f0f0f0;
-  --muted: #6b6b6b;
-  --font-display: "DM Serif Display", Georgia, serif;
-  --font-mono: "DM Mono", monospace;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: var(--font-mono);
-  min-height: 100vh;
-  padding: 2rem;
-  overflow-x: hidden;
-}
-
-/* Background grid */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(var(--border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border) 1px, transparent 1px);
-  background-size: 60px 60px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Glow blob */
-body::after {
-  content: "";
-  position: fixed;
-  top: -20%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 600px;
-  height: 400px;
-  background: radial-gradient(
-    ellipse,
-    rgba(232, 255, 71, 0.06) 0%,
-    transparent 70%
-  );
-  pointer-events: none;
-  z-index: 0;
-}
-      h1 {
-        text-transform: uppercase;
-        text-align: center;
-      }
-      p {
-        letter-spacing: 1px;
-      }
-      a {
-        text-decoration: none;
-        font-size: 1.3rem;
-      }
-      ::selection{
-        background-color: white;
-        color: black;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="style.css">
+   </head>
 
   <body>
     <h1 id="myh1"></h1>
     <p id="p1"></p>
     <p class="ctr-btn"> you can start learning now using the well prepared repostoty below from scratch to pro level.
       👇👇👇
-      
+
     </p>
 
     <p>
-       <a
-        href="https://github.com/yitbarek-git/Javascript">https://github.com/yitbarek-git/Javascript</a>
+      <a href="https://github.com/yitbarek-git/Javascript">https://github.com/yitbarek-git/Javascript</a>
     </p>
     <p>
       Writer : Yitbarek.K 👋😹😹
@@ -304,35 +229,43 @@ body::after {
             console.log(true > false); // true
             console.log("true" > "false") // true
 
-            /*
-             // conditional Branching if, ? and loops
-             if (0){
-              console.log(`you are not a genus guy.`)
-            } // never excutes
-             if (1){console.log(`you are a genus guy`)}// always excutes
+      */
+      /*       console.log( new Date().getTime()); //getting time in small unit
+            console.log( new Date().getFullYear());//2027
+            console.log( new Date().getDate());// 1 up to 31
+            console.log( new Date().getDay());// 1 up to 7
+            console.log( new Date().getHours()); //1 up to 24
+            console.log( new Date().getMinutes());// 1 - 60
+            console.log( new Date().getSeconds()); // 1 -60 */
 
-            let year;
-            do {
-            year = Number(prompt("write the current year!"));
-            if(isNaN(year) || 0 ){
-              alert("please, Enter a valid year number!")
-            }}while (isNaN(year));
+      /* // conditional Branching if, ? and loops
+      if (0) {
+        console.log(`you are not a good guy.`)
+      } // never excutes
+      if (1) { console.log(`you are a good guy`) }// always excutes
 
-            if (year === new Date().getFullYear()) {
-              console.log("correct");
-            } else {
-              alert("wrong");21
-              console.log("sorry");
-            }
+      let year;
+      do {
+        year = Number(prompt("write the current year!"));
+        if (isNaN(year) || 0) {
+          alert("please, Enter a valid year number!")
+        }
+      } while (isNaN(year));
 
-            let age = Number(prompt(`How old are you?`, 18));
-            let message = (age < 5) ? "hi, baby" :
-            (age < 18) ? "hello, what can i help you?" :
-            (age < 100) ?  "hello, sir/Madam" :
+      if (year === new Date().getFullYear()) {
+        console.log("You write the correct year.");
+      } else {
+        console.log("You didn't write the correct year.");
+      }
+      let age = Number(prompt(`How old are you?`, 18));
+      let message = (age < 5) ? "hi, baby" :
+        (age < 18) ? "hello, what can i help you?" :
+          (age < 100) ? "hello, sir/Madam. Enjoy our site. " :
             "OMG! what a gifted age!";
-            alert(message);
-            console.log(age);
-            */
+      alert(message);
+      console.log(age);
+      console.log(`You are ${age} year old.`); */
+
 
       /* Day 4😹😹😹😹😹🐟🐟 May God bless the day! */
       /* Logical Operators  ||    &&   !    and   ?? */
@@ -458,7 +391,8 @@ body::after {
       } */
       //👇👇👇/multiple cases one action
 
-      /* function in Java script (Reusable block of code)*/
+
+      /* function in Javascript (Reusable block of code)*/
 
       /* function calculateGrade(gradeLetter) {
         if (!gradeLetter) return alert("no grade letter entered!");
@@ -477,17 +411,10 @@ body::after {
             alert("Invalid grade letter!");
         }
       }
-      let userInput = prompt("enter your grade letter!");
-      calculateGrade(userInput); */
 
-      /* const studentInfo = (name, age) => {
-        return `your name is ${name}, and your age is ${age}`;
-      }
-      let userName = prompt("Enter your name");
-      let age = Number(prompt("enter your age"));
-      if(!userName || isNaN(age)|| age<=0){
-        console.log("invalid input.");
-      } else {console.log(studentInfo(userName, age));} */
+
+      */
+
 
       /*     let container = [];
          container.push(1, 2, 3, 4, 5, 6, 7, 8); // appending these value to the array(container.)
@@ -511,30 +438,25 @@ body::after {
       console.log(FibonacciNumbers(i));
     }   */
 
-     /*  function fibonacciIter(n) {
-        let a = 0, b = 1;
-        if (n === 0) return a;
-        for (let i = 2; i <= n; i++) {
-          let temp = a + b;
-          a = b;
-          b = temp;
-        }
-        return b;
-      }
-      let userNum = Number(prompt("enter a number : "));
-      for (let i = 0; i <= userNum; i++)
-        console.log(fibonacciIter(i));
-      console.log(typeof fibonacciIter); 202// */
-
-      //😹😹🐟 DAY 5🐟😹😹
-      /* const objects = { name: "yitbarek", score: 3.67,
-     grade: "A"
-   };
-   console.log(objects.score);
-   objects.name = "John";
-   console.log(objects.name);
-   console.log(objects.grade) */
-    </script>
+    
+      /*  function fibonacciIter(n) {
+         let a = 0, b = 1;
+         if (n === 0) return a;
+         for (let i = 2; i <= n; i++) {
+           let temp = a + b;
+           a = b;
+           b = temp;
+         }
+         return b;
+       }
+       let userNum = Number(prompt("enter a number : "));
+       for (let i = 0; i <= userNum; i++)
+         console.log(fibonacciIter(i));
+       console.log(typeof fibonacciIter); 202// */
+     
+     
+   
+   </script>
   </body>
 
 </html>

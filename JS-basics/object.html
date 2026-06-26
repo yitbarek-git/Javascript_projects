@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in javascript</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <h1>Objects in javascript</h1>
+    <p>
+      //😹😹🐟 DAY 5🐟😹😹
+    </p>
+    <script>
+
+
+      /*  const objects = {
+         name: "yitbarek", score: 3.67,
+         grade: "A"
+       };
+       objects.name = "John";
+       delete objects.grade;
+       console.log(objects.score);
+       console.log(objects.name);
+       console.log(objects.grade); */
+
+      //Higher Order functions
+
+      /* function repeatLog(number) {
+        for (let i = 0; i < number; i++) {
+          console.log(i);
+        }
+      }
+
+      repeatLog(10); */
+
+      function repeat(number) {
+        for (let i = 0; i < number; i++)
+          console.log(i);
+      }
+
+      let labels = [];
+      for (let i = 0; i < 10; i++)
+        labels.push(`Unit ${i + 1}`);
+      
+      repeat(5, i => {
+        labels.push(`Unit ${i + 1}`);
+      });
+      console.log(labels);
+    </script>
+  </body>
+
+</html>
