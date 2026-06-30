@@ -17,16 +17,16 @@
       }
 
       h1,
-      h5 {
+      h3 {
         background-image: linear-gradient(to right, aqua, rgb(181, 5, 245));
         background-clip: text;
         color: transparent;
-        font-size: 2rem;
+        font-size: clamp(2rem, 3rem, 4rem);
         font-family: Verdana, Arial, sans-serif;
         text-transform: uppercase;
       }
 
-      h5 {
+      h3 {
         font-size: 1.3rem;
       }
 
