@@ -12,12 +12,15 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: rgba(255, 255, 0, 0.745);
         gap: 2rem;
+        background-color: oklch(0 0 4);
       }
 
       h1,
       h5 {
+        background-image: linear-gradient(to right, aqua, rgb(181, 5, 245));
+        background-clip: text;
+        color: transparent;
         font-size: 2rem;
         font-family: Verdana, Arial, sans-serif;
         text-transform: uppercase;

@@ -25,7 +25,8 @@ input {
 
 h1 {
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: clamp(1rem, 2rem, 3rem);
+  font-weight: bold;
 }
 
 .container {
@@ -40,10 +41,10 @@ h1 {
 
 #compute-btn {
   background-color: rgb(118, 403, 190);
-  font-size: 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
   padding: 2px;
+  font-size: clamp(.7rem, 1rem, 2rem);
 }
 
 #compute-btn :hover {
@@ -52,6 +53,5 @@ h1 {
 }
 
 .info-text {
-  font-weight: 50;
-  font-size: 18px;
+  font-size: clamp(.7rem, 1.5rem, 2.5rem);
 }
