@@ -9,20 +9,49 @@ function calculateBMI() {
 
   resultBTN.value = BMIValue;
 
-  if (BMIValue < 18.5) {
-    conditionBTN.innerText = "Underweight! 🤺"
+
+
+  /*   if (!heightValue || !weighttValue) {
+      conditionBTN.innerText = "Please, Enter the empty value🙏😹"
+    }
+    else if (BMIValue < 18.5) {
+      conditionBTN.innerText = "Underweight! 🤺"
+    }
+    else if (BMIValue >= 18.5 && BMIValue <= 24.9) {
+      conditionBTN.innerText = "Normal weight! 🧟‍♀️"
+    }
+    else if (BMIValue >= 25 && BMIValue < 29.9) {
+      conditionBTN.innerText = "overweight! 👮‍♂️"
+    }
+    else if (BMIValue >= 30) {
+      conditionBTN.innerText = "obisity! 🙆‍♀️"
+    }
+    else
+      conditionBTN.innerText = "Error Occured!"
+  } */
+
+    
+  //OR WE can also apply the same logic using Switch.👇👇👇
+
+  switch (true) {
+
+    case !heightValue || !weighttValue:
+      conditionBTN.innerText = "Please, Enter  valid value/s🙏😹";
+      break;
+    case BMIValue < 18.5:
+      conditionBTN.innerText = "Underweight! 🤺";
+
+    case BMIValue >= 18.5 && BMIValue <= 24.9:
+      conditionBTN.innerText = "Normal weight! 🧟‍♀️";
+      break;
+    case BMIValue >= 25 && BMIValue < 29.9:
+      conditionBTN.innerText = "overweight! 👮‍♂️";
+      break;
+    case BMIValue >= 30:
+      conditionBTN.innerText = "obisity! 🙆‍♀️";
+      break;
+    default: conditionBTN.innerText = "Error has Occured!";
   }
-  else if (BMIValue >= 18.5 && BMIValue <= 24.9) {
-    conditionBTN.innerText = "Normal weight! 🧟‍♀️"
-  }
-  else if (BMIValue >= 25 && BMIValue < 29.9) {
-    conditionBTN.innerText = "overweight! 👮‍♂️"
-  }
-  else if (BMIValue >= 30) {
-    conditionBTN.innerText = "obisity! 🙆‍♀️"
-  }
-  else
-    conditionBTN.innerText = "Error Occured!"
 }
 computeBTN.addEventListener("click", calculateBMI)
 

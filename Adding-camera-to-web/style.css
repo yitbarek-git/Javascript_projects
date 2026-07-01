@@ -7,7 +7,7 @@
       }
 
       body {
-        min-height: 100vh;
+        margin-top: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,17 +17,30 @@
       }
 
       h1,
-      h3 {
-        background-image: linear-gradient(to right, aqua, rgb(181, 5, 245));
-        background-clip: text;
-        color: transparent;
-        font-size: clamp(2rem, 3rem, 4rem);
+      #gift,
+      button {
+        font-size: clamp(1rem, 2rem, 3rem);
         font-family: Verdana, Arial, sans-serif;
         text-transform: uppercase;
       }
 
-      h3 {
-        font-size: 1.3rem;
+      h1,
+      #gift {
+        background-image: linear-gradient(to right, aqua, rgb(181, 5, 245));
+        background-clip: text;
+        color: transparent;
+      }
+
+
+      #gift {
+        border: none;
+        cursor: pointer;
+      }
+
+      button {
+        margin-top: .1em;
+        border: none;
+        border-radius: 5px;
       }
 
       #cameraFeed {
