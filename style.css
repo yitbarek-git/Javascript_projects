@@ -1,5 +1,5 @@
 :root {
-  --bg: #0a0a0a;
+  --bg: hsl(0, 0%, 4%);
   --surface: #111111;
   --border: rgba(255, 255, 255, 0.08);
   --accent-dim: rgba(232, 255, 71, 0.12);
@@ -9,9 +9,7 @@
   --font-mono: "DM Mono", monospace;
 }
 
-*,
-*::before,
-*::after {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -23,7 +21,6 @@ body {
   font-family: var(--font-mono);
   min-height: 100vh;
   padding: 2rem;
-  overflow-x: hidden;
 }
 
 /* Background grid */
@@ -31,9 +28,9 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image:
-    linear-gradient(var(--border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background:
+    linear-gradient(var(--border) 2px, transparent 2px),
+    linear-gradient(90deg, var(--border) 2px, transparent 2px);
   background-size: 60px 60px;
   z-index: 0;
 }
@@ -54,19 +51,35 @@ body::after {
   z-index: 0;
 }
 
+.container {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
 h1 {
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 3px;
+  background: linear-gradient(to right, rgb(0, 255, 255), rgb(0, 80, 255));
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
 }
 
 p {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
 }
 
 a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
+
 
 ::selection {
   background-color: var(--text);

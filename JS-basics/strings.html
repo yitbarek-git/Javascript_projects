@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with string in Javascript</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <h1>working with strings in javascript</h1>
+    <p>strings are data types used to work with a mix of text, numbers and special charactors in programming.</p>
+    <br><br>
+
+    <h3>There are some built in functions and methods in javascript to work with string. </h3> <br>
+    <p> let's take a look in the console</p>
+    <script>
+      let firstName = " yitbarek Kifleyohans";
+      let phone = "929781996";
+      console.log(phone.padStart(10, "0"));
+      console.log(phone.padEnd(15, 0)); //phone000000
+
+      
+      console.log(firstName);
+      console.log(firstName.toUpperCase());
+
+      console.log(firstName.toLowerCase());
+
+      console.log(firstName.slice(0, 3)); //yit
+
+      console.log(firstName.charAt(0)); //y
+
+      console.log(firstName.includes(" "));
+      // true since we  included empty space in our variable.
+
+      console.log(firstName.lastIndexOf()); //-1
+
+      console.log(firstName.length);
+
+      console.log(firstName.repeat(3));
+
+      firstName = firstName.trim();
+      console.log(firstName.bold());
+      console.log(firstName.length);
+      console.log(firstName.split(" "));
+      console.log(firstName.replace(" ", "__"));
+
+
+
+
+    </script>
+  </body>
+
+</html>

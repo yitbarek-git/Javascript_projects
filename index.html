@@ -1,27 +1,26 @@
 <!doctype html>
- <html lang="en">
-
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>javascript journey</title>
     <link rel="stylesheet" href="style.css">
-   </head>
-
+  </head>
   <body>
-    <h1 id="myh1"></h1>
-    <p id="p1"></p>
-    <p class="ctr-btn"> you can start learning now using the well prepared repostoty below from scratch to pro level.
-      👇👇👇
+    <div class="container">
+      <h1 id="myh1"></h1>
+      <p id="p1"></p>
+      <p class="ctr-btn"> you can start learning now using the well prepared repostoty below from scratch to pro level.
+        👇👇👇
+      </p>
 
-    </p>
 
-    <p>
       <a href="https://github.com/yitbarek-git/Javascript">https://github.com/yitbarek-git/Javascript</a>
-    </p>
-    <p>
-      Writer : Yitbarek.K 👋😹😹
-    </p>
+
+      <p>
+        Writer : Yitbarek.K 👋😹😹
+      </p>
+    </div>
     <script>
       /*"use strict";
       confirm(`Are you a student?
@@ -30,11 +29,11 @@
 
       // Dom maniplation
 
-      document.getElementById("myh1").textContent = `A 30 day JS challenge`;
+      document.getElementById("myh1").textContent = `A 30 day JS lessons`;
       document.getElementById("p1").innerHTML = `
-         <strong>Javascript</strong> is a programming language that is used to make web pages interactive and dynamic. It is one of the most popular programming languages in the world and is widely used for web development, game development, and mobile app development.
-          <br>
-         With JavaScript, you can create interactive features such as dropdown menus, sliders, and pop-ups, as well as build complex applications like social media platforms and online marketplaces. Learning JavaScript can open up many opportunities in the tech industry and allow you to create amazing projects!`;
+         <strong><mark>Javascript</mark> </strong> is a programming language that is used to make web pages interactive and dynamic. It is one of the most popular programming languages in the world and is widely used for web development, game development, and mobile app development.
+            <br>
+          With JavaScript, you can create interactive features such as dropdown menus, sliders, and pop-ups, as well as build complex applications like social media platforms and online marketplaces. Learning JavaScript can open up many opportunities in the tech industry and allow you to create amazing projects!`;
 
       /* //Day 1😹😹😹😹😹
             // Interaction with users  (alert, prompt, confirm)
@@ -46,7 +45,7 @@
                     2
                     +1
                 ) //all this are valid ways for interaction
-                 
+                
                 prompt(`Where did you listen about our website?
             A. on youtube
             B, on chatGPt
@@ -61,7 +60,7 @@
                 console.log("Myg name is \"yitbarek\".  backslash = \\  and new \n line "); // "" and '' are written in this way. */
 
       /* shift + alt + A  =  to create multipleline comments
-               shift + alt + F  =  to format our code.
+              shift + alt + F  =  to format our code.
             */
 
       /* let name = "yitbarek",
@@ -84,19 +83,22 @@
       /* camel case is prefered for naming variable & functions in javascript as conventiion.
                 variable can not start with numbers
                 a variable name can consist of Letters(lower and Uper case),
-                numbers, $ and _ characters and unicode(in different language(like 👉 መቶ))። *
+                numbers, $ and _ characters and unicode(in different language(like 👉 መቶ))። 
                 // let, var, const = we use const for values which are constant in our program.
-                 where as we use let and var for changable value but they are different
-                 since var has a global scope and let has block scope
-                let _three = 3;
-                let መቶ = 100;
-                const myBirthDay = "09/12/2004";
-                const $hundredመቶ = 100;
-                console.log(_three + $hundredመቶ + መቶ);
-                const arr = [4, 5, 6, 7];
-                arr.push(10, 30, 50);
-                console.log(arr);
-                console.log(myBirthDay);  */
+                where as we use let and var for changable value but they are different
+                since var has a global scope and let has block scope*/
+     /* 
+     let _three = 3;
+      let መቶ = 100;
+      const curentDate = new Date();
+      const $hundredመቶ = 100;
+      console.log(_three + $hundredመቶ + መቶ);
+      const arr = [4, 5, 6, 7];
+      arr.push(10, 30, 50);
+      for (let i = 0; i < 6; i++) arr.pop();
+      console.log(arr);
+      console.log(curentDate);  //
+      */
 
       /*  let name = "yitbarek";
       let age = 21;
@@ -119,7 +121,7 @@
       console.log(typeof studentInfo[1]); //number
       console.log(typeof studentInfo[2]); //string */
       /* const z = Symbol("QRCODE");
-         console.log(z); */
+        console.log(z); */
 
 
       /* Day 2 😹😹😹🐟🐟 */
@@ -141,7 +143,8 @@
             console.log(String("123z")); // 123z
             console.log(isNaN(123)); // false. cause it is alreardy a number.
             console.log(isNaN("123z")); // true. since. it is not a number
-             */
+            */
+           
 
       /*  // boolean conversion
                 console.log(Boolean(1)); // true
@@ -158,7 +161,7 @@
                 console.log(Boolean(true));  // true
                 console.log(Boolean("false"));  // true
                 console.log(Boolean(false));  // false
-                console.log(Boolean([]));  // objects = true. even the  are empty */
+                console.log(Boolean([]));  // objects = true. even they  are empty */
       /*
               //Basic operators, maths
               // +, -, * , /, %, **(exponential)
@@ -183,7 +186,7 @@
               console.log(a);
               a += a;
               console.log(a); // 40
-               a -= 50;
+              a -= 50;
               console.log(a);  // -10
               a *= a;
               console.log(a);  // -10 * -10 = 100
@@ -196,12 +199,13 @@
       console.log(Math.trunc(3.67));  //always eleminate decimal values = 3
       console.log(Math.floor(2.45)); //remeber in mid-school (floor function) the left most nearest integer in a number line. = 2
       console.log(Math.pow(2, 3));
-      console.log(Math.ceil(2.56));   //  always counted down = 2
+      console.log(Math.ceil(2.56));   
+      //  always counted down = 2
       console.log(Math.sin(45));
       console.log(Math.cos(90));
       console.log(Math.tan(60));
-      console.log(Math.abs(-34));  //34
-      console.log(Math.sign(x));
+      console.log(Math.abs(-34));  // 34
+      console.log(Math.sign(x)); //
       console.log(Math.max(20, 3, 4, 5)); //20 the greatest number amoung the list
       console.log(Math.min(2, 3, 4, 5)); //2 the least number amoung the list. */
 
@@ -228,15 +232,16 @@
             console.log("z" > "A"); // true  a... > z > A...> Z.  caze matters
             console.log(true > false); // true
             console.log("true" > "false") // true
-
       */
-      /*       console.log( new Date().getTime()); //getting time in small unit
-            console.log( new Date().getFullYear());//2027
-            console.log( new Date().getDate());// 1 up to 31
-            console.log( new Date().getDay());// 1 up to 7
-            console.log( new Date().getHours()); //1 up to 24
-            console.log( new Date().getMinutes());// 1 - 60
-            console.log( new Date().getSeconds()); // 1 -60 */
+     
+        /* console.log( new Date().getTime()); //getting time in small unit.
+              console.log( new Date().getFullYear());//2027
+              console.log( new Date().getDate());// 1 up to 31
+              console.log( new Date().getDay());// 1 up to 7
+              console.log( new Date().getHours()); //1 up to 24
+              console.log( new Date().getMinutes());// 1 - 60
+              console.log( new Date().getSeconds()); 
+              // 1 -60 */
 
       /* // conditional Branching if, ? and loops
       if (0) {
@@ -339,6 +344,7 @@
         alert(i);
         i++;
       }
+    
       // ...finish, because now i == 3
 
       let num;
@@ -346,8 +352,9 @@
         num = Number(prompt("Enter a password  b/n 100 and 1000 ", ""));
       } while ((num <= 1000  || num >= 10000) ||
       num == "" || isNaN(num));
-   */
-      /* for (let i = 0; i <= 5; i++) {
+  */
+
+  /* for (let i = 0; i <= 5; i++) {
         if (i === 3) continue; // escape the current value and continue looping
         console.log(i);
       }
@@ -358,12 +365,12 @@
       }
         */
       /*    let sum = 0;
-     while(true){
+    while(true){
       let value = +prompt("Enter a number", ' ')
       if (!value) break;
       sum  += value;
-     }
-     console.log("sum : " + sum ); */
+    }
+    console.log("sum : " + sum ); */
 
       /* the switch statement in Javescript */
 
@@ -411,22 +418,19 @@
             alert("Invalid grade letter!");
         }
       }
-
-
       */
 
-
-      /*     let container = [];
-         container.push(1, 2, 3, 4, 5, 6, 7, 8); // appending these value to the array(container.)
-         console.log(container);
-         console.log(container.length); //8
-         container.pop(); // removing the last element of an array
-         console.log(container);  //1, 2, 3, 4, 5, 6,7
-         container.unshift(0); //adding element to the start
-         console.log(container);
-         container.shift();  //removing element to the start
-         console.log(container);
-         console.log(container.includes(2)); // true = checking presence of element  */
+      /* let container = [];
+        container.push(1, 2, 3, 4, 5, 6, 7, 8); // appending these value to the array(container.)
+        console.log(container);
+        console.log(container.length); //8
+        container.pop(); // removing the last element of an array
+        console.log(container);  //1, 2, 3, 4, 5, 6,7
+        container.unshift(0); //adding element to the start
+        console.log(container);
+        container.shift();  //removing element to the start
+        console.log(container);
+        console.log(container.includes(2)); // true = checking presence of element  */
 
       /* function FibonacciNumbers(n) {
       if (n === 0) return 0;
@@ -438,25 +442,20 @@
       console.log(FibonacciNumbers(i));
     }   */
 
-    
       /*  function fibonacciIter(n) {
-         let a = 0, b = 1;
-         if (n === 0) return a;
-         for (let i = 2; i <= n; i++) {
-           let temp = a + b;
-           a = b;
-           b = temp;
-         }
-         return b;
-       }
-       let userNum = Number(prompt("enter a number : "));
-       for (let i = 0; i <= userNum; i++)
-         console.log(fibonacciIter(i));
-       console.log(typeof fibonacciIter); 202// */
-     
-     
-   
-   </script>
+        let a = 0, b = 1;
+        if (n === 0) return a;
+        for (let i = 2; i <= n; i++) {
+          let temp = a + b;
+          a = b;
+          b = temp;
+        }
+        return b;
+      }
+      let userNum = Number(prompt("enter a number : "));
+      for (let i = 0; i <= userNum; i++)
+        console.log(fibonacciIter(i));
+      console.log(typeof fibonacciIter); 202// */
+    </script>
   </body>
-
 </html>

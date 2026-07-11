@@ -188,17 +188,21 @@
        }
        console.log(randomPointOnCircle(270)); */
 
+
       let arr = [];
+      let lengthOfArray = Number(prompt(" enter the length of array."));
 
-      let userInput = Number(prompt(" enter array elements."))
-      function reverseArray() {
-        for (let i = 0; i < userInput.length; i++) {
-          arr.push(userInput);
-          console.log(arr[i]);
 
-        }
+      for (let i = 0; i < lengthOfArray; i++) {
+        let userInput = Number(prompt(" enter array elements."));
+        if(userInput === 0) break;
+        arr.push(userInput);
       }
-      reverseArray(userInput);
+
+      for (let i = 0; i < lengthOfArray; i++) {
+        console.log(arr[i]);
+      }
+
     </script>
   </body>
 

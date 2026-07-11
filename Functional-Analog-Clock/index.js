@@ -1,5 +1,4 @@
-
-/* Algorithm
+/* ALGORITHM 
   1, we get all HTML elements by their Id.
   2, then, we will access the current date, hour, minute, and second from the browser.
   3, we calculate the degree found in each time frame
@@ -19,6 +18,7 @@ function updateClock() {
   const second = new Date().getSeconds();
 
   const hourDegree = (hour / 12) * 360;
+  
   hourEl.style.transform = `rotate(${hourDegree}deg)`;
 
   const minuteDegree = (minute / 60) * 360;

@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.score span:last-child {
+  color: #667eea;
+  font-size: 1.5rem;
+}
+
+.choices {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.choice-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 3px solid #e0e0e0;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 120px;
+}
+
+.choice-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: #667eea;
+}
+
+.choice-btn:active {
+  transform: translateY(0px);
+}
+
+.choice-btn[data-choice="rock"]:hover {
+  border-color: #e74c3c;
+  background: #fee;
+}
+
+.choice-btn[data-choice="paper"]:hover {
+  border-color: #3498db;
+  background: #e3f2fd;
+}
+
+.choice-btn[data-choice="scissors"]:hover {
+  border-color: #2ecc71;
+  background: #e8f5e9;
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+  gap: 0.25rem;
+}
+
+.game-info span {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.reset-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+.win {
+  color: #2ecc71;
+}
+
+.lose {
+  color: #e74c3c;
+}
+
+.draw {
+  color: #f39c12;
+}
+
+@media (max-width: 500px) {
+  .container {
+      padding: 20px;
+  }
+  
+  .choice-btn {
+      min-width: 80px;
+      padding: 10px 15px;
+      font-size: 1rem;
+  }
+}

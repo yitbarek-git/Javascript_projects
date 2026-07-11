@@ -26,7 +26,7 @@
 
       h1,
       #gift {
-        background-image: linear-gradient(to right, aqua, rgb(181, 5, 245));
+        background: linear-gradient(to right, aqua, rgb(181, 5, 245));
         background-clip: text;
         color: transparent;
       }
@@ -35,6 +35,7 @@
       #gift {
         border: none;
         cursor: pointer;
+        font-size: 2rem;
       }
 
       button {
@@ -44,8 +45,9 @@
       }
 
       #cameraFeed {
-        width: 200px;
-        height: 200px;
+        margin: 4rem auto;
+        width: 30rem;
+        height: 30rem;
         border-radius: 50%;
         object-fit: cover;
       }

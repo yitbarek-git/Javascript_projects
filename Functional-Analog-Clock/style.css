@@ -1,3 +1,6 @@
+:root{
+  --arrow-border : 1px solid #f39c12;
+}
 *,
 *::before,
 *::after {
@@ -12,7 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: verdana, sans-serif;
 }
 
 .container {
@@ -27,7 +30,7 @@ body {
 
 .numbers div {
   position: absolute;
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: bold;
   color: rgb(44, 62, 90);
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
@@ -73,7 +76,7 @@ body {
   background-color: rgb(44, 62, 80);
   border-radius: 50%;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
-  border: 1px solid #f39c12;
+  border: var(--arrow-border);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 10;
 
@@ -82,7 +85,7 @@ body {
 .arrows div {
   background-color: white;
   position: absolute;
-  transform-origin: bottom center; 
+  transform-origin: bottom center;
   bottom: 50%;
   z-index: 3;
   border-radius: 50% 50% 0 0;
@@ -95,6 +98,7 @@ body {
   background: linear-gradient(to top, #2c3e50, #34495e);
   transform: rotate(30deg);
 }
+
 .arrows #minute {
   width: 6px;
   height: 100px;
@@ -104,7 +108,7 @@ body {
 
 .arrows #second {
   width: 4px;
-  height: 135px;
+  height: 128px;
   background: linear-gradient(to top, #e74c3c, #ff6b6b);
   transform: rotate(250deg);
 }

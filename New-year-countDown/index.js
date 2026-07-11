@@ -5,8 +5,8 @@ const minuteEl = document.getElementById("minute");
 const secondEl = document.getElementById("second");
 
 //End of 2026 and start of 2027
- const newYearDate = new Date(`Januarya 1, 2027 00:00:00`).getTime();
- 
+const newYearDate = new Date(`Jan 1, 2027 00:00:00`).getTime();
+
 updateCountDown();
 
 function updateCountDown() {
@@ -17,14 +17,15 @@ function updateCountDown() {
   const hour = 60 * minute;
   const day = 24 * hour;
 
-  const d = Math.floor(gap / day);
-  const h = Math.floor((gap % day) / hour);
-  const m = Math.floor((gap % hour) / minute);
-  const s = Math.floor((gap % minute) / second);
-  dayEl.innerText = d;
-  hourEl.innerText = h;
-  minuteEl.innerText = m;
-  secondEl.innerText = s;
+  const remaining_days = Math.floor(gap / day);
+  const remaining_Hours = Math.floor((gap % day) / hour);
+  const remaining_Minutes = Math.floor((gap % hour) / minute);
+  const remaining_Seconds = Math.floor((gap % minute) / second);
+
+  dayEl.innerText = remaining_days;
+  hourEl.innerText = remaining_Hours;
+  minuteEl.innerText = remaining_Minutes;
+  secondEl.innerText = remaining_Seconds;
   if (gap <= 0) {
     const newYearDate = new Date(`January 1, 2028 00:00:00`).getTime();
   }
