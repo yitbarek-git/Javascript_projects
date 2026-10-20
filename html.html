@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML FULL course</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <script src=""></script>
+    <style>
+      *{
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, rgb(0, 255, 100), rgb(0, 155, 255));
+        text-align: center;
+      }
+      #para2{
+        margin: 30px;
+        width: 200px;
+        height: 120px;
+        text-transform: uppercase;
+        border: 2px solid red;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <!-- We have three ays of writing CSS -->
+  <!-- inline CSS -->
+  <!-- internal CSS -->
+  <!-- External CSS -->
+  <body>
+
+
+    <main>
+      <!-- THis is comment in HTML -->
+       <nav>
+        <ul style="list-style: none; display: flex; gap: 24px; text-align: right; scroll-behavior: smooth;">
+          <a href="#MYDiv1"><li>Home</li></a>
+          <li>Services</li>
+          <li>Education</li>
+          <li>About Us</li>
+          <li>contact</li>
+        </ul>
+       </nav>
+
+      <section id="home">
+        <h1 style="color: blue; text-decoration: underline; text-align: center;">THIS IS OUR HTML FULL COURSE</h1>
+
+        <p class="para" id="para1">This videa containas all the essential concepts of HTML</p>
+
+        <p class="para" id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellendus cupiditate
+          aut
+          error
+          culpa voluptate assumenda, tempore accusamus voluptatem cumque beatae, <br> sit unde recusandae totam sapiente
+          quaerat? Quod debitis soluta voluptatum?</p>
+        <h2>WHAT IS HTML?</h2>
+        <hr>
+      </section>
+      <img src="code.png" width="400px">
+
+      <a href="https://aplusacademy-seven.vercel.app/">
+        <p>Aplus academy</p>
+      </a>
+
+
+      <hr>
+      <video src="video1.mp4" width="500px" controls></video>
+
+      <div class="myDiv" id="MYDiv1"> this is div element
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugiat explicabo reprehenderit dolorum ex
+        magnam dolorem pariatur, dicta rerum est harum, nobis iure cupiditate ab cumque dignissimos commodi laudantium
+        consequatur?
+      </div>
+    </main>
+    <script>
+      // this is a javasccript code or link
+      //alert("Hello");
+    </script>
+  </body>
+</html>

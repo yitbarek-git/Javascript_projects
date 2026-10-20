@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous JavaScript</title>
+  </head>
+
+  <body>
+    <script>
+
+      // function function1(callback) {
+      //   setTimeout(() => {
+      //     console.log("Task 4 completed");
+      //     callback();
+      //   }, 3000); //a type of asynchronous javascript
+      // }
+      // function function2() {
+      //   console.log("Task 1 completed.");
+      //   console.log("Task 2 completed.");
+      //   console.log("Task 3 completed.");
+      // }
+      // function1(function2);
+
+      setTimeout(() => {
+        console.log("Step 1");
+
+        setTimeout(() => {
+          console.log("Step 2");
+
+          setTimeout(() => {
+            console.log("Step 3");
+          }, 1000);
+
+        }, 1000);
+
+      }, 1000);
+
+    </script>
+  </body>
+
+</html>

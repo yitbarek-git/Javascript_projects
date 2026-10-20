@@ -1,15 +1,11 @@
-const computeBTN = document.getElementById("compute-btn")
-const resultBTN = document.getElementById("result-btn")
-const conditionBTN = document.getElementById("weight-condition")
-
+const computeBTN = document.getElementById("compute-btn");
+const resultBTN = document.getElementById("result-btn");
+const conditionBTN = document.getElementById("weight-condition");
 function calculateBMI() {
   heightValue = document.getElementById("height").value / 100;
   weighttValue = document.getElementById("weight").value;
   const BMIValue = weighttValue / (heightValue ** 2);
-
   resultBTN.value = BMIValue;
-
-
 
   /*   if (!heightValue || !weighttValue) {
       conditionBTN.innerText = "Please, Enter the empty value🙏😹"
@@ -27,31 +23,29 @@ function calculateBMI() {
       conditionBTN.innerText = "obisity! 🙆‍♀️"
     }
     else
-      conditionBTN.innerText = "Error Occured!"
+      conditionBTN.innerText = "Something went wrong!"
   } */
 
-    
   //OR WE can also apply the same logic using Switch.👇👇👇
 
   switch (true) {
-
     case !heightValue || !weighttValue:
-      conditionBTN.innerText = "Please, Enter  valid value/s🙏😹";
+      conditionBTN.innerHTML = "Please, Enter  valid value/s🙏😹";
       break;
     case BMIValue < 18.5:
-      conditionBTN.innerText = "Underweight! 🤺";
-
+      conditionBTN.innerHTML = "Underweight! 🤺";
+      break;
     case BMIValue >= 18.5 && BMIValue <= 24.9:
-      conditionBTN.innerText = "Normal weight! 🧟‍♀️";
+      conditionBTN.innerHTML = "Normal weight! 🧟‍♀️";
       break;
     case BMIValue >= 25 && BMIValue < 29.9:
-      conditionBTN.innerText = "overweight! 👮‍♂️";
+      conditionBTN.innerHTML = "overweight! 👮‍♂️";
       break;
     case BMIValue >= 30:
-      conditionBTN.innerText = "obisity! 🙆‍♀️";
+      conditionBTN.innerHTML = "obisity! 🙆‍♀️";
       break;
-    default: conditionBTN.innerText = "Error has Occured!";
+    default: conditionBTN.innerHTML = "Error has Occured!";
   }
 }
-computeBTN.addEventListener("click", calculateBMI)
+computeBTN.addEventListener("click", calculateBMI);
 
