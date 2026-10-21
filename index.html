@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>javascript journey</title>
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
     <div class="container">
       <h1 id="myh1"></h1>
@@ -15,7 +17,8 @@
       </p>
 
 
-      <a href="https://github.com/yitbarek-git/Javascript">https://github.com/yitbarek-git/Javascript</a>
+      <a
+        href="https://github.com/yitbarek-git/Javascript_projects" target="_blank" rel="noopner noreferer">https://github.com/yitbarek-git/Javascript_projects</a>
 
       <p>
         Writer : Yitbarek.K 👋😹😹
@@ -34,7 +37,7 @@
          <strong><mark>Javascript</mark> </strong> is a programming language that is used to make web pages interactive and dynamic. It is one of the most popular programming languages in the world and is widely used for web development, game development, and mobile app development.
             <br>
           With JavaScript, you can create interactive features such as dropdown menus, sliders, and pop-ups, as well as build complex applications like social media platforms and online marketplaces. Learning JavaScript can open up many opportunities in the tech industry and allow you to create amazing projects!`;
-     
+
       /* //Day 1😹😹😹😹😹
             // Interaction with users  (alert, prompt, confirm)
                 alert(`hello`);
@@ -87,18 +90,18 @@
                 // let, var, const = we use const for values which are constant in our program.
                 where as we use let and var for changable value but they are different
                 since var has a global scope and let has block scope*/
-     /* 
-     let _three = 3;
-      let መቶ = 100;
-      const curentDate = new Date();
-      const $hundredመቶ = 100;
-      console.log(_three + $hundredመቶ + መቶ);
-      const arr = [4, 5, 6, 7];
-      arr.push(10, 30, 50);
-      for (let i = 0; i < 6; i++) arr.pop();
-      console.log(arr);
-      console.log(curentDate);  //
-      */
+      /* 
+      let _three = 3;
+       let መቶ = 100;
+       const curentDate = new Date();
+       const $hundredመቶ = 100;
+       console.log(_three + $hundredመቶ + መቶ);
+       const arr = [4, 5, 6, 7];
+       arr.push(10, 30, 50);
+       for (let i = 0; i < 6; i++) arr.pop();
+       console.log(arr);
+       console.log(curentDate);  //
+       */
 
       /*  let name = "yitbarek";
       let age = 21;
@@ -144,7 +147,7 @@
             console.log(isNaN(123)); // false. cause it is alreardy a number.
             console.log(isNaN("123z")); // true. since. it is not a number
             */
-           
+
 
       /*  // boolean conversion
                 console.log(Boolean(1)); // true
@@ -233,15 +236,15 @@
             console.log(true > false); // true
             console.log("true" > "false") // true
       */
-     
-        /* console.log( new Date().getTime()); //getting time in small unit.
-              console.log( new Date().getFullYear());//2027
-              console.log( new Date().getDate());// 1 up to 31
-              console.log( new Date().getDay());// 1 up to 7
-              console.log( new Date().getHours()); //1 up to 24
-              console.log( new Date().getMinutes());// 1 - 60
-              console.log( new Date().getSeconds()); 
-              // 1 -60 */
+
+      /* console.log( new Date().getTime()); //getting time in small unit.
+            console.log( new Date().getFullYear());//2027
+            console.log( new Date().getDate());// 1 up to 31
+            console.log( new Date().getDay());// 1 up to 7
+            console.log( new Date().getHours()); //1 up to 24
+            console.log( new Date().getMinutes());// 1 - 60
+            console.log( new Date().getSeconds()); 
+            // 1 -60 */
 
       /* // conditional Branching if, ? and loops
       if (0) {
@@ -354,16 +357,16 @@
       num == "" || isNaN(num));
   */
 
-  /* for (let i = 0; i <= 5; i++) {
-        if (i === 3) continue; // escape the current value and continue looping
-        console.log(i);
-      }
-
-      for (let i = 0; i < 10; i++) {
-        if (i === 7) break; // stop! Looping
-        console.log(i);
-      }
-        */
+      /* for (let i = 0; i <= 5; i++) {
+            if (i === 3) continue; // escape the current value and continue looping
+            console.log(i);
+          }
+    
+          for (let i = 0; i < 10; i++) {
+            if (i === 7) break; // stop! Looping
+            console.log(i);
+          }
+            */
       /*    let sum = 0;
     while(true){
       let value = +prompt("Enter a number", ' ')
@@ -456,6 +459,25 @@
       for (let i = 0; i <= userNum; i++)
         console.log(fibonacciIter(i));
       console.log(typeof fibonacciIter); 202// */
+
+
+      /* Asynchronous Javascript */
+      setTimeout(() => {
+        console.log("Timer");
+        
+      }, 0);
+
+      function myFirst() {
+        console.log("Hello");
+      }
+      function mySecond() {
+        console.log("Goodbye");
+        
+      }
+      myFirst();
+      mySecond();
+
     </script>
   </body>
+
 </html>

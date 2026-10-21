@@ -23,19 +23,39 @@
       // }
       // function1(function2);
 
-      setTimeout(() => {
-        console.log("Step 1");
 
-        setTimeout(() => {
-          console.log("Step 2");
 
-          setTimeout(() => {
-            console.log("Step 3");
-          }, 1000);
 
-        }, 1000);
+      
 
-      }, 1000);
+      // setTimeout(() => {
+      //   console.log("Step 1");
+
+      //   setTimeout(() => {
+      //     console.log("Step 2");
+
+      //     setTimeout(() => {
+      //       console.log("Step 3");
+      //     }, 1000);
+
+      //   }, 1000);
+
+      // }, 1000);
+
+
+
+      function fetchDatabase() {
+        return new Promise(resolve => setTimeout(() => resolve("User data"), 2000));
+      }
+
+      async function dispalyData(){
+        console.log("Fetching ...");
+        const reult = await fetchDatabase();
+        console.log(reult);
+
+
+      }
+      dispalyData();
 
     </script>
   </body>
