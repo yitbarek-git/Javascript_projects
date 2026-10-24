@@ -12,23 +12,28 @@
     <div class="container">
       <h1 id="myh1"></h1>
       <p id="p1"></p>
-      <p class="ctr-btn"> you can start learning now using the well prepared repostoty below from scratch to pro level.
+      <p class="cta-btn"> you can start learning now using the well prepared repostoty below from scratch to pro level.
         👇👇👇
       </p>
 
 
-      <a
-        href="https://github.com/yitbarek-git/Javascript_projects" target="_blank" rel="noopner noreferer">https://github.com/yitbarek-git/Javascript_projects</a>
+      <a href="https://github.com/yitbarek-git/Javascript_projects" target="_blank"
+        rel="noopner noreferer">https://github.com/yitbarek-git/Javascript_projects</a>
 
       <p>
         Writer : Yitbarek.K 👋😹😹
       </p>
     </div>
     <script>
-      /*"use strict";
+     "use strict";
+     //strict mode === to make Js working in a formal and stirct way. it can handle unassigned variables and more(It makes Javascriot to behave like strictly and reduce run time errors.) */
+     "Use client";
+    /*  
+    // interaction with users
       confirm(`Are you a student?
-      if yes press ok  if not press not`);
-      //strict mode === to make Js working in a formal and stirct way. it can handle unassigned variables and more */
+      if you are a student press ok,  if you are not a student press not`);
+       */
+    
 
       // Dom maniplation
 
@@ -38,18 +43,17 @@
             <br>
           With JavaScript, you can create interactive features such as dropdown menus, sliders, and pop-ups, as well as build complex applications like social media platforms and online marketplaces. Learning JavaScript can open up many opportunities in the tech industry and allow you to create amazing projects!`;
 
-      /* //Day 1😹😹😹😹😹
+    /*  //Day 1😹😹😹😹😹
             // Interaction with users  (alert, prompt, confirm)
                 alert(`hello`);
-                alert("what's")
-                alert('up')
-                alert("Javascript is an amazing prpogramming  launguge you shold to learn")
+              
+                alert("Javascript is an amazing prpogramming  launguge you shold to learn");
                 alert(3+
                     2
                     +1
                 ) //all this are valid ways for interaction
                 
-                prompt(`Where did you listen about our website?
+             let address =   prompt(`Where did you listen about our website?
             A. on youtube
             B, on chatGPt
             C, from another website
@@ -60,20 +64,27 @@
                 let isStudent = confirm(`Are you a student`);
                 console.log(name)
                 console.log(isStudent);
-                console.log("Myg name is \"yitbarek\".  backslash = \\  and new \n line "); // "" and '' are written in this way. */
+                console.log("Myg name is \"yitbarek\".  backslash = \\  and new \n line "); 
+                console.log(address);
+                
+                // "" and '' are written in this way. */
 
       /* shift + alt + A  =  to create multipleline comments
               shift + alt + F  =  to format our code.
             */
 
-      /* let name = "yitbarek",
+/*
+            //variables
+      
+        let name = "yitbarek",
         age = 21,
         status = "programmer";
-      let job = null;
-      let language = "javascript";
-      console.log(`let's learn "HTML", "CSS" and "${language}".`);
-      console.log(
-        `your name is ${name} , you are ${age} years old. and you are a ${status}.`,
+        let job = "content creator";
+        let language = "Javascript";
+        console.log(`let's learn "HTML", "CSS" and "${language}".`);
+        console.log(
+        `your name is ${name} , you are ${age} years old. and you are a ${status} and  ${job}.`
+        
       );
 
       let x1 = "QRCODE";
@@ -81,32 +92,45 @@
       console.log(`these  two (x and y) symbols are equal  👉`, x1 === y1); // true b/se they have the same value
       let x2 = Symbol("QRCODE");
       let y2 = Symbol("QR-CODE");
-      console.log(`these  two (x2 and y2) symbols are equal  👉`, x2 === y2); //false symbol is unique in a program */
+      console.log(`these  two (x2 and y2) symbols are equal  👉`, x2 === y2); //false since symbol is unique in a program */
 
-      /* camel case is prefered for naming variable & functions in javascript as conventiion.
-                variable can not start with numbers
+
+      /* camel case is prefered for naming variable & functions(Methodes) in javascript as conventiion.
+                variable can not start with numbers(1,2,3,4,5...)
                 a variable name can consist of Letters(lower and Uper case),
-                numbers, $ and _ characters and unicode(in different language(like 👉 መቶ))። 
-                // let, var, const = we use const for values which are constant in our program.
+                numbers,dollar sign ($) and Under score(_) characters and unicode(in different language(like 👉 መቶ))። 
+                // let, var, const are key words to declare a variable. = we use const for values which are constant in our program, their values never change ex PI.
                 where as we use let and var for changable value but they are different
                 since var has a global scope and let has block scope*/
-      /* 
-      let _three = 3;
+       
+ /*      let _three = 3;
        let መቶ = 100;
        const curentDate = new Date();
        const $hundredመቶ = 100;
        console.log(_three + $hundredመቶ + መቶ);
-       const arr = [4, 5, 6, 7];
-       arr.push(10, 30, 50);
-       for (let i = 0; i < 6; i++) arr.pop();
-       console.log(arr);
-       console.log(curentDate);  //
-       */
 
-      /*  let name = "yitbarek";
+       function getCurrentDate() {
+          console.log(curentDate);
+        }
+        setTimeout(getCurrentDate, 2000);
+
+       const arr = [4, 5, 6, 7, 10, 30, 50];
+       console.log(arr.length);
+       
+       for (let i = 0; i <= arr.length; i++){ arr.pop();}
+
+       for (let i = 0; i <= arr.length; i++) {function getCurrentDate() {
+          console.log(curentDate);
+        }
+        setTimeout(getCurrentDate, 2000);}
+       console.log(arr); */
+      
+       
+
+ /*        let name = "yitbarek";
       let age = 21;
       let luckyNumbers = [1, 2, 3];
-      let studentInfo = ["yitbarek", 21, "freelancer", "student"];
+      let studentInfo = ["yitbarek", 21, "freelancer", "student", "COntent Creator."];
       console.log(typeof name, typeof age);
       console.log(typeof 123); // number
       console.log(typeof true); //boolean
@@ -116,21 +140,21 @@
       console.log(typeof [1, 3, 4.5]); // object
       console.log(typeof alert); // function
       console.log(typeof confirm); // function. prompt too
-      console.log(luckyNumbers); // prints array
-      console.log(typeof luckyNumbers); // object
+      console.log(luckyNumbers, typeof luckyNumbers); // prints array, Object
       console.log(typeof luckyNumbers[1]); //number
       console.log(studentInfo);
       console.log(typeof studentInfo[0]); //string
       console.log(typeof studentInfo[1]); //number
-      console.log(typeof studentInfo[2]); //string */
-      /* const z = Symbol("QRCODE");
-        console.log(z); */
+      console.log(typeof studentInfo[2]); //string 
+      const z = Symbol("QRCODE");
+       console.log(z);
+      */
 
 
       /* Day 2 😹😹😹🐟🐟 */
-      /*  //Types of convertions
-                  //numeric Convertion
-                  console.log(Number("123")); //number
+        //Types of convertions
+                //numeric Convertion
+             /*     console.log(Number("123")); //number
                   console.log(Number(true));  // 1
                   console.log(Number(null));  // 0
                   console.log(Number(false));  // 0
@@ -165,12 +189,13 @@
                 console.log(Boolean("false"));  // true
                 console.log(Boolean(false));  // false
                 console.log(Boolean([]));  // objects = true. even they  are empty */
-      /*
+      
+
               //Basic operators, maths
               // +, -, * , /, %, **(exponential)
               // ++, -- (increment and decrement)
               // +=, -=, *=, /=, %=, **=
-              let x = 5;
+          /*     let x = 5;
               let y = 10;
               let a = 20;
 
@@ -184,44 +209,47 @@
               console.log(--y); //9  it reduces one
               console.log(y--); //9  remain the same
               console.log(-x); // -7 negates the sign
-              console.log(2 + 4 + "5");
-              console.log("5" + 6 + 8);
+              console.log(2 + 4 + "5"); //65
+              console.log("2" + 4 + 5); //245
               console.log(a);
               a += a;
               console.log(a); // 40
               a -= 50;
               console.log(a);  // -10
-              a *= a;
+              a *= a; // a = a - 50.
               console.log(a);  // -10 * -10 = 100
               a /= a;
-              console.log(a);  // 100/100 = 1
-              */
-      /* let x = -90;
+              console.log(a);  // 100/100 = 1 */
+
+
+/*             // The math module  
+       let x = -90;
       console.log(Math.round(3.67));//4
-      console.log(Math.log(32));
+      console.log(Math.round(3.37));//3
+      console.log(Math.log(8));
       console.log(Math.trunc(3.67));  //always eleminate decimal values = 3
-      console.log(Math.floor(2.45)); //remeber in mid-school (floor function) the left most nearest integer in a number line. = 2
+      console.log(Math.floor(2.45)); //remeber in mid-school (floor function) the left most nearest left integer in a number line. = 2
       console.log(Math.pow(2, 3));
       console.log(Math.ceil(2.56));   
-      //  always counted down = 2
+      //  always counts up = 3
       console.log(Math.sin(45));
-      console.log(Math.cos(90));
+      console.log(Math.cos(x));
       console.log(Math.tan(60));
-      console.log(Math.abs(-34));  // 34
+      console.log(Math.abs(-x));  // 90
       console.log(Math.sign(x)); //
       console.log(Math.max(20, 3, 4, 5)); //20 the greatest number amoung the list
-      console.log(Math.min(2, 3, 4, 5)); //2 the least number amoung the list. */
+      console.log(Math.min(2, 3, 4, 5)); //2 the least number amoung the list.  */
 
       //😹😹😹🐟🐟 Day 3 Javascript
 
-      //Generating random numbers in Js
-      /* let randomNumber = Math.random();
+    /*   //Generating random numbers in Js
+      let randomNumber = Math.random();  // numbers including above 0(included) and below 1(Excluded)
       console.log(Math.floor(randomNumber * 100) + "🤣"); // to generate a random number B/N 0 and 99.
       let x = Math.floor(randomNumber * 100);
-      console.log(Math.pow(x, 2)); */
+      console.log(Math.pow(x, 2));  */
 
-      /*   //comparisons
-            console.log("1" == 1);  //true
+     //comparisons
+      /*       console.log("1" == 1);  //true
             console.log("1" === 1); // false strict comparision
             console.log( null == undefined); // true
             console.log(null === undefined); //false
@@ -234,31 +262,34 @@
             console.log("2" > "12"); //true, considered as a string
             console.log("z" > "A"); // true  a... > z > A...> Z.  caze matters
             console.log(true > false); // true
-            console.log("true" > "false") // true
-      */
+            console.log("true" > "false") // true */
+   
 
-      /* console.log( new Date().getTime()); //getting time in small unit.
-            console.log( new Date().getFullYear());//2027
+    /*    console.log( new Date().getTime()); //getting time in small unit.
+            console.log( new Date().getFullYear());//2026
             console.log( new Date().getDate());// 1 up to 31
             console.log( new Date().getDay());// 1 up to 7
             console.log( new Date().getHours()); //1 up to 24
             console.log( new Date().getMinutes());// 1 - 60
-            console.log( new Date().getSeconds()); 
-            // 1 -60 */
+           console.log( new Date().getSeconds()); */
+            
 
-      /* // conditional Branching if, ? and loops
-      if (0) {
+            // 1 -60 */
+       // conditional Branching if, ? and loops
+    /*   if (0) {
         console.log(`you are not a good guy.`)
       } // never excutes
       if (1) { console.log(`you are a good guy`) }// always excutes
-
-      let year;
+ */
+/*       let year;
       do {
-        year = Number(prompt("write the current year!"));
+        year = Number(prompt("write the current year!", 2027));
         if (isNaN(year) || 0) {
           alert("please, Enter a valid year number!")
         }
       } while (isNaN(year));
+
+
 
       if (year === new Date().getFullYear()) {
         console.log("You write the correct year.");
@@ -266,13 +297,13 @@
         console.log("You didn't write the correct year.");
       }
       let age = Number(prompt(`How old are you?`, 18));
-      let message = (age < 5) ? "hi, baby" :
-        (age < 18) ? "hello, what can i help you?" :
-          (age < 100) ? "hello, sir/Madam. Enjoy our site. " :
-            "OMG! what a gifted age!";
+      let message = 
+                    (age < 5) ? "hi, baby" :
+                    (age < 18) ? "hello, what can i help you?" :
+                    (age < 100) ? "hello, sir/Madam. Enjoy our site. " :
+                    "OMG! what a gifted age!";
       alert(message);
-      console.log(age);
-      console.log(`You are ${age} year old.`); */
+      console.log(`You are ${age} year old.`);  */  
 
 
       /* Day 4😹😹😹😹😹🐟🐟 May God bless the day! */
@@ -291,14 +322,14 @@
       // alert(!true);
       // alert(!false);
 
-      //let user;
-      //alert(user ?? "nonUserr"); // nonuser b/se user is not defiend
+      // let user;
+      // alert(user ?? "nonUser"); // nonuser b/se user is not defiend
 
       // ??  always checks NUll and undefiened. if they come first return them other ways return the next.
 
       /* we can also use multiple operators to check multiple conditions. */
       // Example
-      // console.log(false || 0 || null || undefined); // undefiened.
+     // console.log(false || 0 || null || undefined); // undefiened.
       // alert(true && true && false && true);// false
       // alert( false || 0 || null || false); // false
 
@@ -462,20 +493,42 @@
 
 
       /* Asynchronous Javascript */
-      setTimeout(() => {
-        console.log("Timer");
-        
-      }, 0);
+      /*     setTimeout(function(){
+            console.log("Timer");
+            console.log("this a kind of asynchronois programing.");
+            
+          }, 1000);
+    
+          function myFirst() {
+            console.log("Hello");
+          }
+          function mySecond() {
+            console.log("Goodbye");
+            
+          }
+          myFirst();
+          mySecond();
+     */
 
-      function myFirst() {
-        console.log("Hello");
-      }
-      function mySecond() {
-        console.log("Goodbye");
-        
-      }
-      myFirst();
-      mySecond();
+    /*  const myPromise = new Promise((resolve, reject) => {
+        reject("hello");
+
+      });
+      myPromise.catch((error) => {
+        console.log(error);
+
+      }) */
+
+      /* Array Methods in JS */
+      const fruit = ["Mango", "Apple", "Bannana", "Pineapple", "Coconut"];
+      console.log(fruit.length);
+
+      // fruit.length = 3;
+      // console.log(fruit);
+
+      let fruitList = fruit.toString();
+      console.log(fruit);
+
 
     </script>
   </body>
