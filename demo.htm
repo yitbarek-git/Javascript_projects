@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Array Methods in Javascriot</title>
-</head>
-<body>
-  <p id="demo1"></p>
-  <p id="demo2"></p>
-  <script>
 
-    
-       const fruit = ["Mango", "Apple", "Bannana", "Pineapple", "Coconut"];
-       let demo2 = document.getElementById("demo2").innerText = fruit;
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods in Javascriot</title>
+  </head>
 
-        // fruit.length = 3;
-        // console.log(fruit);
+  <body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
 
-        let fruitList = fruit.toString();
-        console.log(fruit.at(4));
-        const demo1 = document.getElementById("demo1").innerHTML = fruitList;
 
-        console.log(fruit.join(" * ")); //join method
-        /* Poping and pushing , shifting*/
-        fruit.push("Papaya", "Lemon");
-        fruit.pop();
-        fruit.shift();
-        fruit.unshift("Vingar");
-        fruit[0] = "Orange";
-        fruit.splice(2, 1); // removes the third element totaliy
-        delete fruit[2]; // removes the third element but leaves a hole to that index
-        console.log(fruit);
+      const fruit = ["Mango", "Apple", "Bannana", "Pineapple", "Coconut"];
+      let demo2 = document.getElementById("demo2").innerText = fruit;
 
-        /* concatination */
-        drinks = ["water", "Cocacola", "spirit"];
-        snacks = ["Pizza", "bread", "Injera"];
-        allMeals = drinks.concat(snacks);
-        console.log(allMeals);
-        
+      // fruit.length = 3;
+      // console.log(fruit);
 
-        
-  </script>
-</body>
+      let fruitList = fruit.toString();
+      console.log(fruit.at(4));
+      const demo1 = document.getElementById("demo1").innerHTML = fruitList;
+
+      console.log(fruit.join(" * ")); //join method
+      /* Poping and pushing , shifting*/
+      fruit.push("Papaya", "Lemon");
+      fruit.pop();
+      fruit.shift();
+      fruit.unshift("Vingar");
+      fruit[0] = "Orange";
+      fruit.splice(2, 1); // removes the third element totaliy
+      delete fruit[2]; // removes the third element but leaves a hole to that index
+      console.log(fruit);
+
+      /* concatination */
+      const drinks = ["water", "Cocacola", "spirit"];
+      const snacks = ["Pizza", "bread", "Injera"];
+      const allMeals = drinks.concat(snacks);
+      console.log(allMeals);
+
+
+      const listOfNums = [1, 5, 10, 15, 50];
+      console.log(listOfNums.map(n => n ** 2));
+      console.log(listOfNums.filter(n => n < 10));
+      console.log(listOfNums.map(n => n ** 2));
+      console.log(listOfNums.find(n => n > 10));
+      console.log(listOfNums.reduce((sum, n) => { return sum + n }, 0));
+      console.log(listOfNums.some(n => n > 10)); //true
+      console.log(listOfNums.every(n => n > 10)); //false
+      console.log(listOfNums.includes(10));
+      console.log(listOfNums.indexOf(10));
+      console.log(listOfNums.sort((a, b) => a -b)); //ascending order
+      console.log(listOfNums.sort((a, b) => b - a));// descending order
+      
+
+
+
+
+    </script>
+  </body>
+
 </html>
