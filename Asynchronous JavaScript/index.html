@@ -10,6 +10,14 @@
   <body>
     <script>
 
+      function getStudent(callback) {
+        setTimeout(() =>  callback("Yitbarek"), 2000);
+
+      }
+      function showStudent(name) {
+        console.log("student", name);
+      }
+      getStudent(showStudent);
       // function function1(callback) {
       //   setTimeout(() => {
       //     console.log("Task 4 completed");
@@ -39,19 +47,20 @@
       // }, 1000);
 
 
+      /*
+            function fetchDatabase() {
+              return new Promise(resolve => setTimeout(() => resolve("User data"), 2000));
+            }
+      
+            async function dispalyData(){
+              console.log("Fetching ...");
+              const reult = await fetchDatabase();
+              console.log(reult);
+      
+      
+            }
+            dispalyData(); */
 
-      function fetchDatabase() {
-        return new Promise(resolve => setTimeout(() => resolve("User data"), 2000));
-      }
-
-      async function dispalyData(){
-        console.log("Fetching ...");
-        const reult = await fetchDatabase();
-        console.log(reult);
-
-
-      }
-      dispalyData();
 
     </script>
   </body>

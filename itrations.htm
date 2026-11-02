@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itrations in JavaScript</title>
+  </head>
+
+  <body>
+    <h1>THis is Itration lesson</h1>
+    <script>
+      //Loops
+      x = 0
+      do {
+        console.log("While loop is running...");
+        console.log("this loop is running...");
+        x++;
+      } while (x < 0);
+
+
+      const student = { name: "Yitbarek \n", id: "BDU1702794 \n", isonline: true};
+        let text = "";
+      for (let x of student){
+        text += student[x] ;
+
+      }
+      console.log(text);
+      
+    </script>
+  </body>
+
+</html>
